@@ -37,7 +37,7 @@ All computation must be pure and deterministic.
 | Strings | `String` | `alloc::string::String` |
 | Errors | `std::error::Error` | Custom error types |
 | Hash Maps | `HashMap` | `BTreeMap` (deterministic) |
-| Randomness | `rand` | ❌ Not allowed |
+| Randomness | `rand` |  Not allowed |
 | Time | `std::time` | Provided via input |
 
 ## Determinism Requirements
