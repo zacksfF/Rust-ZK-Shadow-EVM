@@ -1,9 +1,12 @@
-/* 
+/*
 Error types for Shadow-EVM execution
 Provides comprehensive error handling for all execution scenarios.
 */
 
+extern crate alloc;
+
 use crate::types::{Address, Hash};
+use alloc::string::{String, ToString};
 use thiserror::Error;
 
 /// Errors that can occur during Shadow-EVM execution

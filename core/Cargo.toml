@@ -1,0 +1,26 @@
+[package]
+name = "shadow-evm-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Core EVM execution engine for Shadow-EVM ZK Coprocessor"
+
+[features]
+default = ["std"]
+std = [
+    "revm/std",
+    "alloy-primitives/std",
+    "sha3/std",
+    "serde/std",
+]
+
+[dependencies]
+revm = { workspace = true }
+alloy-primitives = { workspace = true }
+sha3 = { workspace = true }
+serde = { workspace = true }
+thiserror = { workspace = true }
+bincode = { workspace = true }
+
+[dev-dependencies]
+hex = { workspace = true }
