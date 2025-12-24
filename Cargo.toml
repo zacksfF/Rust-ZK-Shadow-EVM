@@ -1,0 +1,37 @@
+[workspace]
+resolver = "2"
+members = [
+    "core",
+    "zkvm/guest",
+    "zkvm/host",
+]
+exclude = [
+    "examples/simple-call",
+    "examples/erc20-transfer",
+    "examples/uniswap-swap",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "GPL-3.0"
+repository = "https://github.com/zacksfF/Rust-ZK-Shadow-EVM"
+
+[workspace.dependencies]
+# Core EVM
+# Note: std feature is disabled by default for ZK compatibility
+revm = { version = "19.0", default-features = false, features = ["serde"] }
+
+# Hashing & Crypto
+alloy-primitives = { version = "0.8", default-features = false, features = ["serde"] }
+sha3 = { version = "0.10", default-features = false }
+
+# Serialization (ZK-friendly)
+serde = { version = "1.0", default-features = false, features = ["derive", "alloc"] }
+bincode = { version = "1.3" }
+
+# Error handling
+thiserror = "2.0"
+
+# Testing
+hex = "0.4"

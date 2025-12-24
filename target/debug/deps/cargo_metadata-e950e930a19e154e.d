@@ -1,0 +1,11 @@
+/Users/m2/Rust-ZK-Shadow-EVM/target/debug/deps/libcargo_metadata-e950e930a19e154e.rmeta: /Users/m2/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_metadata-0.18.1/src/lib.rs /Users/m2/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_metadata-0.18.1/src/dependency.rs /Users/m2/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_metadata-0.18.1/src/diagnostic.rs /Users/m2/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_metadata-0.18.1/src/errors.rs /Users/m2/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_metadata-0.18.1/src/messages.rs
+
+/Users/m2/Rust-ZK-Shadow-EVM/target/debug/deps/libcargo_metadata-e950e930a19e154e.rlib: /Users/m2/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_metadata-0.18.1/src/lib.rs /Users/m2/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_metadata-0.18.1/src/dependency.rs /Users/m2/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_metadata-0.18.1/src/diagnostic.rs /Users/m2/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_metadata-0.18.1/src/errors.rs /Users/m2/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_metadata-0.18.1/src/messages.rs
+
+/Users/m2/Rust-ZK-Shadow-EVM/target/debug/deps/cargo_metadata-e950e930a19e154e.d: /Users/m2/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_metadata-0.18.1/src/lib.rs /Users/m2/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_metadata-0.18.1/src/dependency.rs /Users/m2/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_metadata-0.18.1/src/diagnostic.rs /Users/m2/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_metadata-0.18.1/src/errors.rs /Users/m2/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_metadata-0.18.1/src/messages.rs
+
+/Users/m2/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_metadata-0.18.1/src/lib.rs:
+/Users/m2/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_metadata-0.18.1/src/dependency.rs:
+/Users/m2/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_metadata-0.18.1/src/diagnostic.rs:
+/Users/m2/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_metadata-0.18.1/src/errors.rs:
+/Users/m2/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cargo_metadata-0.18.1/src/messages.rs:
