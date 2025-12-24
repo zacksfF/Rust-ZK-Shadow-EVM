@@ -1,0 +1,12 @@
+[package]
+name = "simple-call-example"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "simple_call"
+path = "main.rs"
+
+[dependencies]
+shadow-evm-core = { path = "../../core" }
+hex = "0.4"

@@ -1,0 +1,12 @@
+[package]
+name = "erc20-transfer-example"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "erc20_transfer"
+path = "main.rs"
+
+[dependencies]
+shadow-evm-core = { path = "../../core" }
+hex = "0.4"
