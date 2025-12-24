@@ -2,7 +2,7 @@
 
 Thank you for your interest in contributing to Shadow-EVM! This document provides guidelines and instructions for contributing.
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -19,7 +19,7 @@ cargo build --workspace
 cargo test --workspace
 ```
 
-## 📋 Development Workflow
+## Development Workflow
 
 ### 1. Create a Branch
 
@@ -55,7 +55,7 @@ cargo fmt --check
 - Reference any related issues
 - Ensure CI passes
 
-## 🏗️ Project Structure
+## Project Structure
 
 | Crate | Purpose |
 |-------|---------|
@@ -63,7 +63,7 @@ cargo fmt --check
 | `shadow-evm-guest` | RISC Zero guest program |
 | `shadow-evm-host` | Prover CLI application |
 
-## 📝 Code Style
+## Code Style
 
 ### Rust
 
@@ -92,13 +92,13 @@ cargo fmt --check
 - Test full execution flows
 - Mock external dependencies
 
-## 📚 Documentation
+## Documentation
 
 - Update README.md for user-facing changes
 - Update docs/ for architectural changes
 - Add inline comments for complex logic
 
-## 🐛 Bug Reports
+## Bug Reports
 
 Please include:
 1. Steps to reproduce
@@ -106,17 +106,17 @@ Please include:
 3. Actual behavior
 4. Environment details (OS, Rust version, etc.)
 
-## 💡 Feature Requests
+## Feature Requests
 
 Please include:
 1. Use case description
 2. Proposed solution
 3. Alternatives considered
 
-## 📜 License
+## License
 
 By contributing, you agree that your contributions will be licensed under GPL-3.0.
 
-## 🙏 Thank You!
+## Thank You!
 
 Your contributions help make Shadow-EVM better for everyone!
