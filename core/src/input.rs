@@ -48,12 +48,7 @@ impl Default for BlockEnv {
 
 impl BlockEnv {
     /// Create a new block environment with custom parameters
-    pub fn new(
-        number: BlockNumber,
-        timestamp: Timestamp,
-        gas_limit: Gas,
-        chain_id: u64,
-    ) -> Self {
+    pub fn new(number: BlockNumber, timestamp: Timestamp, gas_limit: Gas, chain_id: u64) -> Self {
         Self {
             number,
             timestamp,
@@ -273,11 +268,8 @@ mod tests {
             AccountState::new_with_balance(U256::from(1000u64)),
         );
 
-        let input1 = ExecutionInput::new(
-            BlockEnv::default(),
-            TxInput::default(),
-            pre_state.clone(),
-        );
+        let input1 =
+            ExecutionInput::new(BlockEnv::default(), TxInput::default(), pre_state.clone());
 
         let input2 = ExecutionInput::new(BlockEnv::default(), TxInput::default(), pre_state);
 

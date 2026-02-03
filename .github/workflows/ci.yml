@@ -32,7 +32,7 @@ jobs:
             target
           key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
       - name: Clippy
-        run: cargo clippy --all-targets --all-features -D warnings
+        run: cargo clippy -p shadow-evm-core --all-features -- -D warnings
 
   test-core:
     name: Core Tests

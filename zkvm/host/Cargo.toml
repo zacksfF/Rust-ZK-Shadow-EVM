@@ -4,6 +4,9 @@ version = "0.1.0"
 edition = "2021"
 description = "RISC Zero host program for Shadow-EVM ZK Coprocessor"
 
+[package.metadata.risc0]
+methods = ["../guest"]
+
 [dependencies]
 # Core Shadow-EVM library
 shadow-evm-core = { path = "../../core" }

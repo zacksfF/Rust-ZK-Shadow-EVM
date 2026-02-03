@@ -222,7 +222,11 @@ impl Database for InMemoryDB {
     }
 
     fn block_hash(&mut self, number: u64) -> Result<Hash> {
-        Ok(self.block_hashes.get(&number).copied().unwrap_or(Hash::ZERO))
+        Ok(self
+            .block_hashes
+            .get(&number)
+            .copied()
+            .unwrap_or(Hash::ZERO))
     }
 }
 

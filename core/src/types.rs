@@ -3,7 +3,7 @@
 //! Uses alloy-primitives for Ethereum-compatible types.
 //! These types are designed to be ZK-VM friendly (no_std compatible).
 
-pub use alloy_primitives::{Address, B256, Bytes, U256};
+pub use alloy_primitives::{Address, Bytes, B256, U256};
 
 /// 32-byte hash (Keccak256 output)
 pub type Hash = B256;

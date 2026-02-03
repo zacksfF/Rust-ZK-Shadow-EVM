@@ -4,44 +4,44 @@
 
 set -e
 
-echo " Shadow-EVM Setup Script"
-echo "=========================="
+echo "Shadow-EVM Setup Script"
+echo "========================"
 echo ""
 
 # Check Rust
 echo "Checking Rust..."
 if ! command -v cargo &> /dev/null; then
-    echo " Rust not found. Installing..."
+    echo "Rust not found. Installing..."
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
     source $HOME/.cargo/env
 else
-    echo " Rust found: $(rustc --version)"
+    echo "Rust found: $(rustc --version)"
 fi
 
 # Check Foundry
 echo ""
 echo "Checking Foundry..."
 if ! command -v forge &> /dev/null; then
-    echo " Foundry not found. Installing..."
+    echo "Foundry not found. Installing..."
     curl -L https://foundry.paradigm.xyz | bash
     source $HOME/.bashrc 2>/dev/null || source $HOME/.zshrc 2>/dev/null || true
     foundryup
 else
-    echo " Foundry found: $(forge --version)"
+    echo "Foundry found: $(forge --version)"
 fi
 
 # Check RISC Zero
 echo ""
 echo "Checking RISC Zero..."
 if ! command -v cargo-risczero &> /dev/null; then
-    echo " RISC Zero not found."
+    echo "RISC Zero not found."
     echo "To install RISC Zero, run:"
     echo "  curl -L https://risczero.com/install | bash"
     echo "  rzup install"
     echo ""
     echo "Skipping RISC Zero for now (host build will fail without it)"
 else
-    echo " RISC Zero found"
+    echo "RISC Zero found"
 fi
 
 # Build core library
@@ -67,7 +67,7 @@ cd ..
 
 echo ""
 echo "================================"
-echo " Setup complete!"
+echo "Setup complete!"
 echo ""
 echo "Next steps:"
 echo "  1. Install RISC Zero if not already installed:"

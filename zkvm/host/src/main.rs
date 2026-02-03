@@ -144,7 +144,10 @@ async fn cmd_prove(
         println!("Loaded input from {:?}", input_path);
         println!("  Caller: {:?}", input.caller());
         println!("  Target: {:?}", input.target());
-        println!("  Pre-state root: 0x{}", hex::encode(input.pre_state_root().as_slice()));
+        println!(
+            "  Pre-state root: 0x{}",
+            hex::encode(input.pre_state_root().as_slice())
+        );
     }
 
     // Generate proof
@@ -197,7 +200,7 @@ async fn cmd_verify(
         if let Some(expected) = expected_commitment {
             let expected_bytes = hex::decode(expected.trim_start_matches("0x"))?;
             let expected_hash = Hash::from_slice(&expected_bytes);
-            
+
             if result.commitment.commitment == expected_hash {
                 println!("\n✓ Commitment matches expected value");
             } else {
